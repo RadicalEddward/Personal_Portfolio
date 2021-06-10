@@ -7,17 +7,45 @@
   <link rel="stylesheet" href="css/style.css" type="text/css" />
 
   <!-- Fontawesome -->
-  <script src="https://kit.fontawesome.com/10a325a193.js" crossorigin="anonymous"></script>
- 
+  <script src="https://kit.fontawesome.com/10a325a193.js" crossorigin="anonymous"></script> 
+
   <title>My portfolio</title>
 </head>
 <body>
   
   <!-- Navbar -->
-  <nav>
+  <nav class="navbar navbar-expand-md px-3 bg-dark">
+
+    <a class="navbar-brand me-auto" href="index.html">LD</a>
     
+    <!-- Navbar for md and larger -->
+    <div class="d-none d-md-flex w-100 flex-row-reverse" id="mdNavbar">
+      <div class="navbar-nav">
+        <a class="nav-link" href="#">Projects</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Contact</a>
+      </div>
+    </div>
+    
+
+    <!-- Navbar for sm and smaller -->
+    <a class="navbar-toggler collapsed" role="button" data-toggle="collapse" href="#collapsedMenu" id="navbarToggler"><i class="fas fa-bars"></i></a>
+
+    <div class="navbar-collapse collapse text-end py-2" id="collapsedMenu">
+      <a class="nav-link" href="#">Projects</a>
+      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="#">Contact</a>
+    </div>
+
   </nav>
 
+
+
+  <!-- JavaScript; needed for the drop down butttons to work
+  jQuery first, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
 </body>
 </html>
