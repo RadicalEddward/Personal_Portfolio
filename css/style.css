@@ -1,3 +1,6 @@
+/* All */
+
+
 /* Navbar */
 nav {
   z-index: 1;
@@ -13,7 +16,7 @@ nav {
 /* Hero */
 #hero {
   height: 100vh;
-  background: url(../images/hero-background.jpg) no-repeat;
+  background: url(../images/hero-background.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -30,5 +33,19 @@ nav {
     border: none !important;
     width: 100%;
     height: 100%;
+  }
+}
+
+
+/* About */
+
+#about img {
+  width: 200px;
+}
+
+@media (min-width: 1200px) {
+  #about>.row {
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
