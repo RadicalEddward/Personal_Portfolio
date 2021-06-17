@@ -49,3 +49,53 @@ nav {
     margin: 0 auto;
   }
 }
+
+
+/* Projects */
+
+.project-section {
+  margin: 20px 0;
+  padding: 0;
+  background: lightgrey;
+}
+
+#projects>.row>div {
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .project-section {
+    overflow: hidden;
+    border-radius: 10%;
+  }
+
+  #projects>.row>div {
+    padding: 0 1.5rem;
+  }
+
+  #projects {
+    padding: 0 5%;
+  }
+}
+
+.project-picture {
+  overflow: hidden;
+}
+
+.aspectRatioBox {
+  padding-top: calc(2/3 * 100%);
+}
+
+.project-picture .aspectRatioBox {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.project-picture:hover .aspectRatioBox {
+  transform: scale(1.1);
+  transition: 1s;
+}
