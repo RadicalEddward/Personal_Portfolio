@@ -99,3 +99,19 @@ nav {
   transform: scale(1.1);
   transition: 1s;
 }
+
+
+/* Contact*/
+
+#contact button {
+  background-color: rgb(75, 75, 75);
+  color: white;
+}
+
+
+/* Footer */
+
+footer p {
+  font-size: 26px;
+  color: grey;
+}

@@ -16,7 +16,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-md px-3 bg-dark w-100 position-fixed"> 
+  <nav class="navbar navbar-expand-md px-3 bg-dark w-100 position-absolute"> 
     <!-- position fixed or absolute? -->
 
     <a class="navbar-brand me-auto" href="index.html">LD</a>
@@ -26,7 +26,7 @@
       <div class="navbar-nav">
         <a class="nav-link" href="#about">About</a>
         <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </div>
     </div>
 
@@ -38,7 +38,7 @@
     <div class="navbar-collapse collapse text-end py-2" id="collapsedMenu">
       <a class="nav-link" href="#about">About</a>
       <a class="nav-link" href="#projects">Projects</a>
-      <a class="nav-link" href="#">Contact</a>
+      <a class="nav-link" href="#contact">Contact</a>
     </div>
 
   </nav>
@@ -73,7 +73,7 @@
               <li>Name: Lukas Daporta</li>
               <li>Age: 24</li>
               <li>Job: Student</li> 
-              <li>Degree: none</li>
+              <li>Degree: Web Development</li>
             </ul>  
           </div>
         </div>
@@ -88,7 +88,7 @@
 
 
   <!-- Projects -->
-  <div class="container-fluid" id="projects">
+  <div class="container-fluid bg-light" id="projects">
     <div class="row text-center">
       <div class="col-12 col-md-6 col-lg-4">
         <div class="project-section">
@@ -149,6 +149,48 @@
 
 
   <!-- Contact -->
+  <div class="container mt-4 p-5" id="contact">
+    <div class="row flex-column flex-lg-row">
+      <div class="col-12 col-lg-6">
+        <h3>Contact me</h3>
+        <address>
+          Example-street 23<br />
+          Town, State<br />
+          +23 324 2343 432<br />
+          example@email.com
+        </address>
+      </div>
+      <div class="col-12 col-lg-6">
+        <form class="row">
+          <div class="col-lg-6 py-2">
+            <input class="form-control" type="text" name="full-name" placeholder="Full Name" />
+          </div>
+          <div class="col-lg-6 py-2">
+            <input class="form-control" type="email" name="email" placeholder="Your Email" />           
+          </div>
+          <div class="py-2">
+            <input class="form-control" type="text" name="subject" placeholder="Subject" />
+          </div>
+          <div class="py-2">
+            <textarea class="form-control" name="message" placeholder="Your message" rows="5"></textarea>
+          </div>
+          <button class="btn btn-default btn-block mt-2 p-2">Send message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="container-fluid text-center py-5 bg-light">
+    <p>
+      <i class="fab fa-facebook mx-2 mx-lg-3"></i>
+      <i class="fab fa-twitter mx-2 mx-lg-3"></i>
+      <i class="fab fa-instagram mx-2 mx-lg-3"></i>
+      <i class="fab fa-github mx-2 mx-lg-3"></i>
+    </p>
+    <small>&copy; Lukas Daporta</small>
+  </footer>
 
 
 
